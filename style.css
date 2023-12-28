@@ -230,10 +230,23 @@ ul li:hover ul.dropdown{
         padding: 100px 80px;
     }
     .blog img{
-        width: 90%;
-        height: 40vh;
+        width: 100%;
+        height: 30vh;
         float: left;
     }
+}
+@media only screen and (max-width: 600px) {
+    #logo2 img{
+        display: none;
+    }
+    ul li:hover ul.dropdown{
+        display: none;
+    }
+    ul li ul.dropdown li{
+        display: none;
+    }
+   
+      
 }
 .copyright span{
     color: red;
