@@ -234,6 +234,12 @@ ul li:hover ul.dropdown{
         height: 30vh;
         float: left;
     }
+     .logo img{
+        width: 60px;
+    }
+    ul .dropdown{
+        display: none;
+    }
 }
 @media only screen and (max-width: 600px) {
     #logo2 img{
