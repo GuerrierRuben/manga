@@ -182,8 +182,8 @@ ul li:hover ul.dropdown{
     padding: 100px 80px;
 }
 .blog img{
-    width: 70%;
-    height: 50vh;
+    width: 90%;
+    height: 40vh;
     float: left;
 }
 .blog span{
@@ -218,6 +218,22 @@ ul li:hover ul.dropdown{
 .copyright{
     color: white;
     text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .blog{
+        float: left;
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 100px 80px;
+    }
+    .blog img{
+        width: 90%;
+        height: 40vh;
+        float: left;
+    }
 }
 .copyright span{
     color: red;
