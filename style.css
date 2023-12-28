@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+ul{
+    list-style: none;
+    /* background-color: white; */
+    /* display: flex; */
+    padding-top: 17px;
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+ul li{
+display: inline-block;
+position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    transition: all .40s ease-in-out;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background-color: gray;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.home{
+    /* height: 80vh; */
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-image:url("image/img/desktop-wallpaper-the-blue-exorcist-rin-blue-exorcist.jpg");
+    /* top: -100px; */
+    height: 91vh;
+}
+.hom{
+    /* height: 80vh; */
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-image:url("image/img/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjirō-hd-wallpaper-preview.jpg");
+    /* top: -100px; */
+    height: 85vh;
+}
+.logo img{
+    width: 80px;
+}
+.logo{
+    padding: 0 100px 0 100px;
+}
+.home-text{
+    padding-left: 150px;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: white;
+}
+.home-text a{
+    color: white;
+}
+.home-text span{
+    color:red;
+    font-size: 30px;
+}
+.btn a{
+    color: black;
+}
+.btn{
+    display: inline-block;
+    padding-top: 200px;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    background: #3B065E;
+    border: 1px solid #3B065E;
+    transition: all .40s ease;
+    margin-top: 20px;
+}
+.btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+}
+.text-top{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.annonce{
+    margin-top: 30px;
+    padding-top: 190px;
+    position: relative;
+    background-image:url("image/img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    /* justify-content:center; */
+    height:auto;
+    width: 100%;
+    /* padding-bottom: 100px; */
+}
+
+.annonce .text-annonce{
+    top: 100px;
+    padding-left: 180px;
+    padding-bottom: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: white;
+}
+.annonce .text-annonce p{
+    color: white;
+    font-size: 15px;
+}
+.annonce .text-annonce .b a{
+    color: white;
+}
+.annonce .text-annonce .btn{ 
+    display: inline-block;
+    padding-top: 200px;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    background: #3B065E;
+    border: 1px solid #3B065E;
+    transition: all .40s ease;
+    margin-top: 20px;
+}
+.annonce .text-annonce .btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+}
+.blog{
+    float: left;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 100px 80px;
+}
+.blog img{
+    width: 70%;
+    height: 50vh;
+    float: left;
+}
+.blog span{
+    float: left;
+    color: rgba(250, 70, 70, 0.678);
+    width: 100%;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.blog h2{
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+}
+.blog p{
+    color: white;
+    width: 70%;
+}
+.blog a{
+    margin-top: 10px;
+    float: left;
+    background-color: rgba(250, 70, 70, 0.678);
+    color: white;
+    padding: 5px 20px;
+    transition: all .40s ease-in-out;
+    border-radius: 5%;
+}
+.blog a:hover{
+    background: transparent;
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+.copyright span{
+    color: red;
+}
+
+
