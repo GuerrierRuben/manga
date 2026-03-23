@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,800&family=Poppins:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Manga Details - ScanOtaku</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
+            <div class="navbar">
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categorie.html">Categories</a>
+                        <ul class="dropdown">
+                            <li><a href="categorie.html">Action</a></li>
+                            <li><a href="categorie.html">Sport</a></li>
+                            <li><a href="categorie.html">Adventure</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo" id="logo2"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
+        </nav>
+    </header>
+
+    <section class="manga-details">
+        <div class="container">
+            <div class="details-wrapper">
+                <div class="manga-image">
+                    <img src="images/top manga/45a3222a-cad6-4c86-a3e8-ad057133c575.jpeg" alt="Berserk" id="manga-cover">
+                </div>
+                <div class="manga-info">
+                    <h1 id="manga-title">BERSEK</h1>
+                    <div class="manga-metadata">
+                        <span><i class='bx bxs-star'></i> 4.9</span>
+                        <span><i class='bx bxs-category'></i> Action, Seinen, Dark Fantasy</span>
+                        <span><i class='bx bxs-user'></i> Kentaro Miura</span>
+                    </div>
+                    <h3>Synopsis</h3>
+                    <p id="manga-description">
+                        Guts, a former mercenary now known as the "Black Swordsman," is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person sacrifices everything he's ever known for his own selfish desires. Now, Guts is marked for death and hunted by demons, but he will not stop until he has exacted his revenge.
+                    </p>
+                    <div class="details-buttons">
+                        <a href="construction.html" class="btn">Commencer à lire</a>
+                        <a href="#" class="btn btn-alt">Ajouter aux favoris</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright"> © <span>OTAKU</span> All right reserved</div>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+
+        // Quick script to handle dynamic content if needed, otherwise it's just a template
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('title');
+        const img = urlParams.get('img');
+        
+        if (title) {
+            document.getElementById('manga-title').innerText = title;
+            document.title = title + " - ScanOtaku";
+        }
+        if (img) {
+            document.getElementById('manga-cover').src = img;
+        }
+    </script>
+</body>
+</html>
