@@ -1,0 +1,606 @@
+*{
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+nav{
+    display:flex ;
+    justify-content: space-between;
+    color: #000;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+nav .logo img{
+    width: 40%;
+    height: auto;
+}
+nav .logo p{
+    margin: 0px;
+}
+.navbar a{
+    color: #000;
+    padding: 20px;
+}
+.navbar a:hover{
+    color: rgb(194, 159, 6);
+}
+#hom{
+    color: rgb(194, 159, 6);
+}
+#hom:hover{
+    color: #000;
+}
+
+nav .add-card {
+    display: flex;
+    gap: 3rem;
+}
+nav .add-card a{
+    font-size: 20px;
+}
+nav i{
+    /* background-color: blue; */
+    color: black;
+}
+nav i:hover{
+    color: rgb(194, 159, 6);
+
+}
+nav .menu{
+    display: none;
+}
+
+.home{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-image:url("Mee/shirt-mockup-concept-with-plain-clothing_23-2149448749.jpg");
+    /* top: -100px; */
+}
+.home h4{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.6s ease-out;
+}
+.home-text{
+    padding-left: 80px;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: white;
+}
+.home-text a{
+    color: white;
+}
+.home-text span{
+    color:black;
+}
+.btn a{
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding-top: 200px;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(194, 159, 6);
+    border: 1px solid rgb(194, 159, 6);
+    transition: all .40s ease;
+    margin-top: 20px;
+}
+.btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+}
+
+section{
+    padding-top: 50px;
+}
+
+.text-collection{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.text-arrivals{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 8px;
+}
+.arrivals .grid img{
+    width: 10vw;
+    height: 25vh;
+    border-radius: 5%;
+    /* border: 0.5px solid rgba(0, 0, 0, 0.322); */
+}
+.arrivals .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0px 50px 0px 150px;
+    position: relative;
+    padding-bottom: 130px;
+    
+
+
+}
+.arrivals .image{
+    position: relative;
+    /* background-color: rgba(233, 233, 233, 0.993); */
+    width: 10vw;
+    height: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5%;
+    
+}
+.arrivals .text1{
+    text-align: center;
+    font-size: 13px;
+    line-height: 3px;
+    letter-spacing: 1px;
+}
+#low{
+    opacity: 0.7;
+}
+.arrivals .text2{
+    /* background-color: rgb(250, 43, 43);  */
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 20px;
+    left: 2px;
+}
+.arrivals .text2 p{
+    background-color: rgba(255, 0, 0, 0.377);
+    border-radius: 5%;
+    padding: 3px;
+    
+    
+}
+.annonce{
+    padding-top: 190px;
+    position: relative;
+    background-image:url("Mee/sho.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    /* justify-content:center; */
+    height: 40vh;
+    width: 100%;
+    /* padding-bottom: 100px; */
+}
+
+.annonce .text-annonce{
+    top: 100px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: white;
+}
+.annonce .text-annonce p{
+    color: rgb(44, 42, 42);
+    font-size: 15px;
+}
+.annonce .text-annonce .b a{
+    color: rgb(44, 44, 44);
+}
+.annonce .text-annonce .btn{ 
+    display: inline-block;
+    padding-top: 200px;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(194, 159, 6);
+    border: 1px solid rgb(194, 159, 6);
+    transition: all .40s ease;
+    margin-top: 20px;
+}
+.annonce .text-annonce .btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+}
+.best-deal-text{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 8px;
+}
+.best-deal .grid img{
+    width: 10vw;
+    height: 25vh;
+    border-radius: 5%;
+    /* border: 0.5px solid rgba(0, 0, 0, 0.322); */
+}
+.best-deal .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 0px 50px 0px 150px;
+    position: relative;
+    padding-bottom: 130px;
+    
+
+
+}
+.best-deal .image{
+    position: relative;
+    /* background-color: rgba(233, 233, 233, 0.993); */
+    width: 10vw;
+    height: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5%;
+    
+}
+.best-deal .text1{
+    text-align: center;
+    font-size: 13px;
+    line-height: 3px;
+    letter-spacing: 1px;
+}
+.letters-text{
+    text-align: center;
+}
+.new{
+    text-align: center;
+    padding-top: 0px;
+    line-height: 8px;
+}
+.newletters{
+    padding: 50px 40px;
+    text-align: center;
+    color: #fff;
+}
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.email-box i{
+    /* background: #4808f8; */
+    font-size: 40px;
+    line-height: 40px;
+}
+.tbox,.buton{
+    border: none;
+    outline: none;
+}
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.buton{
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #FB6336;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: 1px solid var(--main-color);
+}
+.last-text p{
+    text-align: center;
+    padding: 1px;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.partie .contact-reseau ul{
+    display: flex;
+    gap: 2rem;
+}
+.partie .contact-reseau  i{
+    color:white;
+    font-size: 35px;
+}
+.partie .contact-reseau i:hover{
+    color: #000;
+    transform: scale(0.8) translateY(-3px)
+}
+.partie .contact-reseau  p{
+    font-size: 30px;
+    text-align: center;
+    padding-left: -10px;
+    color: white;
+} 
+
+
+@media(max-width:1008px){
+    header{
+        padding: 20px ;
+        transition: .4s;
+    }
+    .navbar{
+        display: flex;
+    } 
+}
+
+
+@media(max-width:858px){
+    .navbar{
+        display: none;
+    }
+    .add-card .menu{
+        display: initial;
+    }
+    
+}
+
+.sale__gri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0px 20px;
+  }
+  
+  .sale__car {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sale__conten {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    line-height: 2px;
+  }
+  
+  .sale__titl {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FB6336;
+  }
+  
+  .sale__titl span {
+    font-size: 2.5rem;
+  }
+  
+  .sale__subtitl {
+    font-size: 1rem;
+  }
+  
+  .sale__btn {
+    margin-top: 2rem;
+    /* color: var(--white);
+    background-color: var(--text-dark); */
+  }
+  
+  
+  .sale__car::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+  .sale__car img{
+    width: 100%;
+  }
+  
+  .sale__car:hover::before {
+    top: 0;
+  }
+
+  .brands__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+  
+  .brand__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .brand__image img {
+    max-width: 120px;
+  }
+  
+  .brand__image:hover {
+    opacity: 1;
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .menu-toggle{
+    /* font-size: 40px; */
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  @media (width < 900px) {
+    .sale__gri {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .brands__container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .menu-toggle{
+        display: block;
+        text-align: center;
+      }
+  }
+  
+  @media (width < 600px) {
+    .sale__gri {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .brands__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+  }
+
+  .search-box {
+    display: none;
+    position: fixed;
+    top: 50px; /* Ajustez la position verticale selon vos besoins */
+    right: 20px; /* Ajustez la position horizontale selon vos besoins */
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+    background: white; /* Couleur de fond de la boîte de recherche */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    z-index: 1111;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ff6f61; /* Couleur de la bordure basse */
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6f61; /* Couleur de fond orange */
+    color: white;
+    border: none;
+    border-radius: 0 0 5px 5px; /* Coins arrondis seulement en bas */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #ff4f3e; /* Couleur de fond orange foncé au survol */
+}
+
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        top: 80px; /* Adjust as needed */
+    }
+    .navbar {
+        /* display: none; */
+        flex-direction: column;
+        background-color: #3a3a3b;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar a {
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        /* border-bottom: 1px solid #555; */
+    }
+    
+    .add-card {
+        /* Add your existing styles for add-card */
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-toggle {
+        cursor: pointer;
+    }
+}
+
+
+
+
+<style>
+    /* Style pour le formulaire de connexion */
+    .login-form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        max-width: 300px; /* Ajustez la largeur selon vos besoins */
+        width: 100%;
+    }
+
+    .login-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .login-form input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .login-form button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .login-form button:hover {
+        background-color: #45a049;
+    }
+
+    .login-form p {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Ajoutez plus de styles selon vos préférences */
+</style>\

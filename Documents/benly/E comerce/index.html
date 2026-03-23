@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>EcomerceToolkit</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <p class="logo"><img src="Ecommerce/eco-removebg-preview.png"></p>
+        <div class="navbar">
+        <a href="#" id="hom">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Terms</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        </div>
+        <div class="add-card">
+            <a href="#" id="searchIcon" onclick="toggleSearch()"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bxs-cart'></i></a>
+            <a href="#"><i class='bx bx-log-in'></i></a>
+            <a class="menu"><div class="menu-toggle" onclick="toggleMenu()"><i class='bx bx-menu-alt-right'></i></div></a>
+
+        </div>
+     </nav>
+	 <div class="search-box">
+		<a href="#"><input type="text" placeholder="Search..."></a>
+		<button onclick="closeSearch()">Close</button>
+	</div>
+	<div class="login-form" style="display: none;">
+		<form>
+			<!-- Vos champs de formulaire ici -->
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+			
+			<button type="button" onclick="submitLoginForm()">Login</button>
+		</form>
+	</div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Hello</h4>
+            <h1>Welcome to the site E Comerce<span>Toolkit</span></h1>
+            <h3>Make your Shopping Here</h3>
+            <a href="#" class="btn">BUY NOW</a>
+        </div>
+    </section> 
+    <div class="text-collection">
+        <h1>One Sale</h1>
+    </div>
+    <section class="section__containe sale__containe">
+      <div class="sale__gri">
+        <div class="sale__car">
+          <img src="image/img/sale-1.jpg" alt="sale" />
+          <div class="sale__conten">
+            <p class="sale__subtitl"></p>
+            <h4 class="sale__titl">sale <span>40%</span> off</h4>
+            <p class="sale__subtitl">- DON'T MISS -</p>
+            <button class="btn sale__btn">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="sale__car">
+          <img src="image/img/sale-2.jpg" alt="sale" />
+          <div class="sale__conten">
+            <p class="sale__subtitl"></p>
+            <h4 class="sale__titl">sale <span>25%</span> off</h4>
+            <p class="sale__subtitl">- DON'T MISS -</p>
+            <button class="btn sale__btn">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="sale__car">
+          <img src="image/img/sale-3.jpg" alt="sale" />
+          <div class="sale__conten">
+            <p class="sale__subtitl"></p>
+            <h4 class="sale__titl">sale <span>20%</span> off</h4>
+            <p class="sale__subtitl">- DON'T MISS -</p>
+            <button class="btn sale__btn">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="text-arrivals" >
+        <h1>News Arrivals</h1>
+        <p>Best product just for you</p>
+    </div>
+    <div class="wrapper">
+		<div class="product-area">
+
+			<div class="img-area">
+				<img alt="Product 1" src="image/Beauty collection/kit-manucure-professionnel-complet-54w.jpeg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            			<a class="btn-2" href="details.html?id=1">View Details</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star"></span> 
+					<span class="fa fa-star"></span>					
+				</div>
+				<div class="product-price">
+					$19.99
+				</div>
+			</div>
+		</div>
+
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Beauty collection/produit-visage.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=2">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$24.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Collection bijoux/collier-coeur-l.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=3">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
+				</div>
+				<div class="product-price">
+					$39.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Collection bijoux/12.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=4">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$12.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Collection vetements/apc-t-shirt.jpeg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=5">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$9.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Collection vetements/sweat-a-capuche-nike-pour-homme-club19.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=6">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+
+    <div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/img/musthave-1.png">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=7">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+    <div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/img/instagram-6.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=8">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+    <div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/img/instagram-4.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=9">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+    
+	</div>
+
+    </section>
+    <section class="annonce">
+        <!-- <div class="image-annonce"><img src="Mee/shoes.jpg"> -->
+        <div class="text-annonce">
+             <p>Your ultimate destination for, </p>
+            <p>BEAUTY, DRESS, ACCESSORIES, and SHOES!</p>
+            <p>Discover the hottest trends and unleash your inner Fashionista</p>
+            <p class="btn"><a href="#collection">See Collection</a></p>
+
+        </div>
+        </div>
+    </section>
+    <div class="best-deal-text">
+        <h1>Best Deals</h1>
+        <p>At the last picked from designer of our store</p>
+    </div>
+    <div class="wrapper">
+		<div class="product-area">
+
+			<div class="img-area">
+				<img alt="Product 1" src="image/Collection vetements/maillot-aiksolna-2023-anniversaire-nike.jpeg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            			<a class="btn-2" href="details.html?id=10">View Details</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star"></span> 
+					<span class="fa fa-star"></span>					
+				</div>
+				<div class="product-price">
+					$19.99
+				</div>
+			</div>
+		</div>
+
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Beauty collection/produit-visage.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=2">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$24.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Shoes collection/chau1.jpeg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=11">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
+				</div>
+				<div class="product-price">
+					$39.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/Shoes collection/graviton-pro_3383496_1140x1140.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=12">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$12.99
+				</div>
+			</div>
+		</div>
+    <div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/img/instagram-5.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=9">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+    <div class="product-area">
+			<div class="img-area">
+				<img alt="" src="image/img/musthave-2.png">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="details.html?id=7">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>Product name</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+	</div>
+    </section>
+    <section class="newsletters">
+        <div class="neww">
+            <form action="">
+                <div class="letters-text">
+                    <h2 class="new">Subscribe to the newsletter</h2>
+                    <p>Subscribe to our newsletter to receive the latest updates straight to your inbox. Be the first to know about our new products!</p>
+                    <p> Join us today for your purchase and win up to 10% discount on all products!</p>
+                        <div class="email-box">
+                            <i class='bx bx-envelope'></i>
+                            <input class="tbox" type="email" value="" placeholder="Entrez votre email">
+                            <button class="buton" type="button" name="button">Rejoindre</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section__container brands__container">
+      <div class="brand__image">
+        <img src="assets/brand-1.png" alt="brand" />
+      </div>
+      <div class="brand__image">
+        <img src="assets/brand-2.png" alt="brand" />
+      </div>
+      <div class="brand__image">
+        <img src="assets/brand-3.png" alt="brand" />
+      </div>
+      <div class="brand__image">
+        <img src="assets/brand-4.png" alt="brand" />
+      </div>
+      <div class="brand__image">
+        <img src="assets/brand-5.png" alt="brand" />
+      </div>
+      <div class="brand__image">
+        <img src="assets/brand-6.png" alt="brand" />
+      </div>
+    </section>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+                <p>Come Shopping in your store</p>
+              <div class="partie">
+                <div class="contact-reseau">
+                <ul>
+                    <a href="#"><li><i class='bx bxl-facebook'></i></li></a>
+                    <a href="#"><li><i class='bx bxl-instagram'></i></li></a>
+                    <a href="#"><li><i class='bx bxl-whatsapp'></i></li></a>
+                    <a href="#"><li><i class='bx bxl-linkedin'></i></li></a>
+                </ul>
+            </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="center box">
+            <h2>Quicks Link</h2>
+            <div class="content">
+              <div class="place">
+                <span class="text"><a href="#home"><h4>Online Store</h4></a></span>
+              </div>
+              <div class="phone">
+                <span class="text"> <a href="#collection"><h4>Our Collection</h4></a></span>
+              </div>
+              <div class="email">
+                <span class="text"> <a href="#arrivals"><h4>Promotions</h4></a></span>
+              </div>
+              <div class="email">
+                <span class="text"> <a href="#best-deal"><h4>Top Brands</h4></a></span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+       
+      </footer>
+   <section>
+    <div class="last-text">
+        <p>Developed by Guerrier Ruben @2023</p>
+    </div>
+    </section>
+    <script>
+      function toggleMenu() {
+          var navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+      }
+  </script>
+  <script src="css/main.js"></script>
+</body>
+</html>
